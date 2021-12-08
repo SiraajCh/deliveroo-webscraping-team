@@ -10,6 +10,7 @@ import requests
 import time
 import os
 import json
+import demoji
 
 class Scraper:
     """
@@ -219,9 +220,10 @@ class Scraper:
             except:
                 print(f'Unable to open tab {url}')
         
-        with open(f'{self.dataoutput}/data.json', 'w') as outfile:
-            json.dump(restaurants, outfile, indent=2)
-
+        #demojirestaurants = [[(demoji.replace(key),demoji.replace(value)) for key,value in dictionary.items()] for dictionary in restaurants]
+        print(restaurants)
+        # with open(f'{self.dataoutput}/data.json', 'w') as outfile:
+        #     json.dump(demojirestaurants, outfile, indent=2)
         return restaurants
 
 

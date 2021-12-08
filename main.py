@@ -1,8 +1,8 @@
 #%%
 from scraper import Scraper
 
-scraper = Scraper('LS12 5NJ')
+scraper = Scraper('E2 0AG')
 # %%
-scraper.scrape(5)
+scraper.scrape(1)
 
 # %%
